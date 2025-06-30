@@ -11,13 +11,13 @@ const Layout = () => {
     <div className="min-h-screen w-full bg-gradient-to-tr from-green-50 via-white to-blue-100 font-sans">
       
       {/* Navbar */}
-      <header className="shadow-md sticky top-0 z-50">
+      <header className="shadow-md sticky top-0 z-50 w-full">
         <Navbar />
       </header>
 
       {/* Main Content Area */}
-      <main className="px-4 md:px-8 lg:px-16 py-6">
-        <div className="max-w-7xl mx-auto bg-white/60 backdrop-blur-md border border-gray-200 rounded-2xl shadow-xl p-6">
+      <main className="px-0 py-6 w-full">
+        <div className="w-full bg-white/60 backdrop-blur-md border border-gray-200 rounded-none shadow-xl p-6">
           <Routes>
             <Route path="/" element={<Form />} />
             <Route path="/displayProduct" element={<DisplayProduct />} />
@@ -28,7 +28,7 @@ const Layout = () => {
       </main>
 
       {/* Footer */}
-      <footer className="text-center text-gray-500 text-sm py-4">
+      <footer className="text-center text-gray-500 text-sm py-4 w-full">
         © {new Date().getFullYear()} MyShop. All rights reserved.
       </footer>
     </div>
